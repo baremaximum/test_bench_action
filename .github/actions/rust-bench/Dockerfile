@@ -19,7 +19,7 @@ COPY entrypoint.sh entrypoint.sh
 # Make entrypoint executable
 RUN chmod +x entrypoint.sh
 
-RUN ls -a /urs/local/bin
+RUN ls -a /usr/local/bin
 
 # Set Entrypoint
 ENTRYPOINT [ "/app/entrypoint.sh" ]

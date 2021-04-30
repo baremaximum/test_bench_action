@@ -5,7 +5,7 @@ FROM rust:1.51
 WORKDIR /app
 
 # Install nightly toolchain
-RUN rustup toolchain install nightly
+# RUN rustup toolchain install nightly
 
 # Switch to nightly rust
 RUN rustup override set nightly

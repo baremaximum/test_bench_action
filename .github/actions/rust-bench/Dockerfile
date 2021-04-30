@@ -10,5 +10,5 @@ COPY . .
 RUN chmod +x entrypoint.sh
 
 # Set Entrypoint
-ENTRYPOINT [ "entrypoint.sh" ]
+ENTRYPOINT [ "./.github/actions/rust-bench/entrypoint.sh" ]
 

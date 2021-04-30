@@ -1,3 +1,2 @@
 #!/bin/sh -l
-echo "${PWD}"
-cargo --version
+echo "${PATH}"

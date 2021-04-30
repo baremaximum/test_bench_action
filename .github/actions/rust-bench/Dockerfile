@@ -11,16 +11,13 @@ RUN rustup toolchain install nightly
 RUN rustup override set nightly
 
 # Copy source
-COPY . .
-
-# Remove this
-RUN ls -a
+COPY / .
 
 # Copy cargo manifest
 COPY Cargo.toml Cargo.toml
 
 # Copy entrypoint
-COPY ./.github/actions/entrypoint.sh entrypoint.sh
+COPY entrypoint.sh entrypoint.sh
 
 # Make entrypoint executable
 RUN chmod +x entrypoint.sh

@@ -1,0 +1,5 @@
+name: 'Rust Bench'
+description: 'Run Rust benchmarks'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

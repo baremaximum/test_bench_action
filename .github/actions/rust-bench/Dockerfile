@@ -6,9 +6,6 @@ RUN rustup override set nightly
 # Copy source
 COPY . .
 
-# Copy entrypoint
-COPY entrypoint.sh entrypoint.sh
-
 # Make entrypoint executable
 RUN chmod +x entrypoint.sh
 

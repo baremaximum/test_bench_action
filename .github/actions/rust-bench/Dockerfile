@@ -19,7 +19,7 @@ COPY entrypoint.sh entrypoint.sh
 # Make entrypoint executable
 RUN chmod +x entrypoint.sh
 
-RUN cargo --version
+RUN whoami
 
 # Set Entrypoint
 ENTRYPOINT [ "/app/entrypoint.sh" ]

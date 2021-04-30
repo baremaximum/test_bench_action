@@ -22,5 +22,5 @@ RUN chmod +x entrypoint.sh
 RUN echo "${PATH}"
 
 # Set Entrypoint
-ENTRYPOINT [ "/app/entrypoint.sh" ]
+ENTRYPOINT [ "cargo", "bench" ]
 

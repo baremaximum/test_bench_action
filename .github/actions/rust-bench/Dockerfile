@@ -11,7 +11,10 @@ RUN rustup toolchain install nightly
 RUN rustup override set nightly
 
 # Copy source
-COPY src src
+COPY . .
+
+# Remove this
+RUN ls -a
 
 # Copy cargo manifest
 COPY Cargo.toml Cargo.toml

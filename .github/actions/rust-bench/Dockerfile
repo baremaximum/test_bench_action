@@ -19,8 +19,6 @@ COPY entrypoint.sh entrypoint.sh
 # Make entrypoint executable
 RUN chmod +x entrypoint.sh
 
-RUN whoami
-
 # Set Entrypoint
-ENTRYPOINT [ "/app/entrypoint.sh" ]
+ENTRYPOINT [ "cargo bench" ]
 

@@ -1,2 +1,3 @@
 #!/bin/sh -l
-whoami
+echo "${PWD}"
+cargo --version

@@ -10,5 +10,5 @@ COPY . .
 RUN chmod +x entrypoint.sh
 
 # Set Entrypoint
-ENTRYPOINT [ "ls", "a" ]
+ENTRYPOINT [ "ls"]
 

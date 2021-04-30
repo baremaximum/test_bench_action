@@ -12,6 +12,8 @@ COPY entrypoint.sh /entrypoint.sh
 # Make entrypoint executable
 RUN chmod +x entrypoint.sh
 
+RUN echo "${PATH}"
+
 # Set Entrypoint
 ENTRYPOINT [ "/entrypoint.sh"]
 

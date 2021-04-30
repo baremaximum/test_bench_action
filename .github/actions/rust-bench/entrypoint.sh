@@ -1,3 +1,3 @@
 #!/bin/sh
 echo "${PATH}"
-cargo --version
+cargo bench

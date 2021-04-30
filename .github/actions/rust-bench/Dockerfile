@@ -13,9 +13,6 @@ RUN rustup override set nightly
 # Copy source
 COPY / .
 
-# Copy cargo manifest
-COPY Cargo.toml Cargo.toml
-
 # Copy entrypoint
 COPY entrypoint.sh entrypoint.sh
 
